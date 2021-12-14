@@ -137,7 +137,7 @@ class _MyAppState extends State<MyApp> {
                     "Symbol Toggle", "symbol", isSymbolSwitched),
                 const Center(
                   child: Text(
-                    "Yaklaşık Değer",
+                    "Password length",
                     style: Sabitler.toogleStyle,
                   ),
                 ),
