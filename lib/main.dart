@@ -169,46 +169,46 @@ class _MyAppState extends State<MyApp> {
                           isUpperSwitched &&
                           isLowerSwitched &&
                           isSymbolSwitched) {
-                        _callFor(passwordLong / 4, 4, numberList, upperCaseList,
+                        _callFor(passwordLong, 4, numberList, upperCaseList,
                             lowerCaseList, symbolList);
                       } else if (isNumberSwitched &&
                           isUpperSwitched &&
                           isLowerSwitched) {
-                        _callFor(passwordLong / 4, 3, numberList, upperCaseList,
+                        _callFor(passwordLong, 3, numberList, upperCaseList,
                             lowerCaseList, []);
                       } else if (isNumberSwitched &&
                           isUpperSwitched &&
                           isSymbolSwitched) {
-                        _callFor(passwordLong / 4, 3, numberList, upperCaseList,
+                        _callFor(passwordLong, 3, numberList, upperCaseList,
                             symbolList, []);
                       } else if (isNumberSwitched &&
                           isLowerSwitched &&
                           isSymbolSwitched) {
-                        _callFor(passwordLong / 4, 3, numberList, lowerCaseList,
+                        _callFor(passwordLong, 3, numberList, lowerCaseList,
                             symbolList, []);
                       } else if (isUpperSwitched &&
                           isSymbolSwitched &&
                           isLowerSwitched) {
-                        _callFor(passwordLong / 4, 3, upperCaseList,
-                            lowerCaseList, symbolList, []);
+                        _callFor(passwordLong, 3, upperCaseList, lowerCaseList,
+                            symbolList, []);
                       } else if (isNumberSwitched && isUpperSwitched) {
-                        _callFor(passwordLong / 2, 2, numberList, upperCaseList,
-                            [], []);
+                        _callFor(
+                            passwordLong, 2, numberList, upperCaseList, [], []);
                       } else if (isNumberSwitched && isLowerSwitched) {
-                        _callFor(passwordLong / 2, 2, numberList, lowerCaseList,
-                            [], []);
+                        _callFor(
+                            passwordLong, 2, numberList, lowerCaseList, [], []);
                       } else if (isNumberSwitched && isSymbolSwitched) {
-                        _callFor(passwordLong / 2, 2, numberList, symbolList,
-                            [], []);
+                        _callFor(
+                            passwordLong, 2, numberList, symbolList, [], []);
                       } else if (isLowerSwitched && isSymbolSwitched) {
-                        _callFor(passwordLong / 2, 2, lowerCaseList, symbolList,
-                            [], []);
+                        _callFor(
+                            passwordLong, 2, lowerCaseList, symbolList, [], []);
                       } else if (isLowerSwitched && isUpperSwitched) {
-                        _callFor(passwordLong / 2, 2, lowerCaseList,
-                            upperCaseList, [], []);
-                      } else if (isUpperSwitched && isSymbolSwitched) {
-                        _callFor(passwordLong / 2, 2, upperCaseList, symbolList,
+                        _callFor(passwordLong, 2, lowerCaseList, upperCaseList,
                             [], []);
+                      } else if (isUpperSwitched && isSymbolSwitched) {
+                        _callFor(
+                            passwordLong, 2, upperCaseList, symbolList, [], []);
                       } else if (isUpperSwitched && isLowerSwitched) {
                         _callFor(passwordLong, 2, upperCaseList, lowerCaseList,
                             [], []);
@@ -344,20 +344,20 @@ class _MyAppState extends State<MyApp> {
         }
         break;
       case 2:
-        for (int i = 0; i < passwordLong; i++) {
+        for (int i = 0; i < passwordLong / 2; i++) {
           password += passingListOne[_callRandom(passingListOne)] +
               passingListTwo[_callRandom(passingListTwo)];
         }
         break;
       case 3:
-        for (int i = 0; i < passwordLong; i++) {
+        for (int i = 0; i < passwordLong / 4; i++) {
           password += passingListOne[_callRandom(passingListOne)] +
               passingListTwo[_callRandom(passingListTwo)] +
               passingListThree[_callRandom(passingListThree)];
         }
         break;
       case 4:
-        for (int i = 0; i < passwordLong; i++) {
+        for (int i = 0; i < passwordLong / 4; i++) {
           password += passingListOne[_callRandom(passingListOne)] +
               passingListTwo[_callRandom(passingListTwo)] +
               passingListThree[_callRandom(passingListThree)] +
